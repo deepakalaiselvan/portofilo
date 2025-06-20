@@ -1,0 +1,639 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: black;
+    /* color: aqua; */
+    box-shadow: 2px 2px 10px aqua;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    /* margin-right: 10px; */
+    color: aqua;
+
+
+}
+
+.nav-link:hover {
+    color: beige;
+    cursor: pointer;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid aqua;
+    border-radius: 35px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: aqua;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fir {
+    float: right;
+}
+
+/* home page */
+.main {
+    background-image: url(images/Gemini_Generated_Image_1r5wco1r5wco1r5w.png);
+    background-repeat: no-repeat;
+    width: 100dvw;
+    height: 100vh;
+    display: flex;
+
+}
+
+
+.name {
+    flex: 1;
+    /* background-color: b; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    z-index: 1;
+}
+
+
+.main h3 {
+    font-size: 4.4rem;
+    font-weight: 700;
+    margin-top: 200px;
+    background-image: url(images/home-blueprints.jpeg);
+    background-clip: text;
+    color: transparent;
+}
+
+.main small {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.main h6 {
+    font-size: 1.4rem;
+    line-height: 1;
+    color: black;
+    font-weight: bold;
+}
+
+.main .bt1 {
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: aqua;
+    outline: none;
+    border: 3px solid aqua;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.main .bt1:hover {
+    background-color: aqua;
+    color: black;
+    transition: 1s;
+    border: 3px solid aqua;
+}
+
+.main .bt2 {
+    height: 55px;
+    width: 138px;
+    background-color: aqua;
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.main .bt2:hover {
+    background-color: transparent;
+    transition: 0.5s;
+    color: aqua;
+    border: 3px solid black;
+}
+
+/* About */
+
+
+.About {
+    background-color: black;
+    width: 100dvw;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: aqua;
+}
+
+
+.about-text {
+    font-size: 1rem;
+    color: white;
+}
+
+/* details */
+
+.details {
+
+    background-color: rgb(221, 218, 218);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px aqua;
+
+
+}
+
+/* skills */
+
+.skills {
+    background-color: black;
+    width: 100dvw;
+    padding-top: 60px;
+
+}
+
+.skill-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-bottom: 50px; */
+    color: rgb(221, 218, 218);
+}
+
+.skills p {
+    color: aqua;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.skills i {
+    color: white;
+}
+
+
+
+
+/* Education */
+
+.Education {
+    background-color: black;
+    width: 100dvw;
+    /* height: 100%; */
+    /* padding-top: 100px; */
+}
+
+.Education-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(221, 218, 218);
+}
+
+.education-card {
+    background: linear-gradient(145deg, #00f7ff, #79ffe0);
+    color: #000;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 8px 16px rgba(26, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+}
+
+.education-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.education-text {
+    font-size: 0.95rem;
+}
+
+.slide-in-left,
+.slide-in-right {
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.slide-in-left {
+    transform: translateX(-100px);
+}
+
+.slide-in-right {
+    transform: translateX(100px);
+}
+
+.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* experience */
+
+.experience {
+    background-color: black;
+    width: 100dvw;
+
+}
+
+.exp-title {
+    color: rgb(221, 218, 218);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.exp h3 {
+    color: aqua;
+}
+
+.exp h4 {
+    color: white;
+}
+
+.exp p {
+    color: rgb(221, 218, 218);
+}
+
+
+
+/* projects */
+
+.project {
+    background-color: black;
+    width: 100dvw;
+}
+
+.project-title p {
+    text-align: center;
+    font-size: 2.0rem;
+    color: white;
+}
+
+.project-title h2 {
+    color: rgb(221, 218, 218);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card img {
+    height: 250px;
+}
+
+.card-title {
+    color: aqua;
+}
+
+/* service */
+
+.Services {
+    background-color: black;
+    width: 100dvw;
+}
+
+.services-title h2 {
+    color: rgb(146, 138, 138);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.services-title p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.service-box {
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(159, 158, 158);
+}
+
+.service-box:hover {
+    transform: translateX(-5px);
+}
+
+.service-box p {
+    color: black;
+    font-weight: bold;
+}
+
+.service-icon i {
+    color: rgb(146, 138, 138);
+    text-align: center
+}
+
+.servicebox-title {
+    color: white;
+
+}
+
+/* contact */
+
+.contact {
+    width: 100dvw;
+    /* height: 100dvh; */
+    background-color: black;
+}
+
+.contact-title {
+    color: rgb(221, 218, 218);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.contact-details {
+    color: aqua;
+
+
+
+}
+
+.contact-details i {
+    color: white;
+}
+
+.contact-details p,
+a {
+    color: white;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: white;
+}
+
+.email {
+    border-right: 2px solid aqua;
+    cursor: pointer;
+}
+
+.phone {
+    border-right: 2px solid aqua;
+}
+
+.linkedin a:hover {
+    color: aqua;
+}
+
+
+
+/* form */
+
+.form {
+    /* background-image: url(bank-interior.jpg); */
+    background-image: url(images/architects-designers-working-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: black;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua;
+    position: relative;
+    box-shadow: 2px 2px 7px aqua;
+    /* margin-left:400px ; */
+}
+
+.form form {
+    width: 70%;
+}
+
+.form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.form input {
+
+    border-radius: 5px;
+    border: 2px solid white;
+    outline: white;
+    background-color: rgba(5, 0, 0, 0.734);
+    color: white;
+}
+
+textarea {
+    background-color: black;
+    outline: white;
+    border: 2px solid white;
+    color: white;
+}
+
+.form button {
+    margin-top: 50px;
+    margin-left: 190px;
+    height: 45px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: aqua;
+    color: black;
+    box-shadow: 2px 2px 10px white;
+}
+
+.form button:hover {
+    background-color: black;
+    color: aqua;
+}
+
+.success-msg {
+    display: none;
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    width: 40px;
+    margin-bottom: 10px;
+    margin-left: 300px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+/* icons */
+
+.icon {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.icon li {
+    display: inline;
+    margin-left: 40px;
+    color: aqua;
+}
+
+li a {
+    color: aqua;
+
+}
+
+li i {
+    font-size: 30px;
+}
+
+
+.fa-github {
+    border-radius: 35px;
+}
+
+.fa-github:hover {
+    color: black;
+    background-color: gray;
+}
+
+
+.fa-envelope:hover {
+    /* color:green; */
+    background: linear-gradient(to bottom,blue 30%,red 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-color: darkred; */
+}
+
+.fa-linkedin-in:hover {
+    color: rgb(0, 0, 255);
+}
+
+
+
+/* responsive */
+@media screen and (max-width:400px) {
+    .main {
+        margin-top: 50px;
+        height: auto;
+        padding: 50px;
+    }
+
+    .main small {
+        font-size: 1.4rem;
+    }
+
+    .main h3 {
+        margin-top: 100px;
+        font-size: 2.2rem;
+    }
+
+    .main h6 {
+        font-size: 1.2rem;
+    }
+
+    .main .bt1 {
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .main .bt2 {
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    /* 
+    .about{
+       
+
+    } */
+
+    .about-title {
+        margin-top: 0px;
+    }
+
+    .details {
+        padding: 0px;
+    }
+
+    .Education {
+        margin-top: 100px;
+    }
+
+    .education-title {
+        font-size: 2.2rem;
+    }
+
+    .education-card {
+        justify-self: center;
+        height: 70%;
+        width: 85%;
+
+    }
+
+    .education-title {
+        font-size: 0.80rem;
+        margin-bottom: 5px;
+
+    }
+
+    .education-text {
+        font-size: 0.70rem;
+    }
+
+    /* service */
+    .service-box {
+        width: 75%;
+        justify-self: center;
+    }
+
+
+    /* contact */
+
+
+
+    .email {
+        border-right: none;
+    }
+
+    .phone {
+        border-right: none;
+    }
+
+}
